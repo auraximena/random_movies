@@ -1,0 +1,18 @@
+[{
+    "Nombre":"Maligno",
+    "Director":"James Wan", 
+    "Patrocinador": "Aura Ximena Gómez",
+    "Imagen": "../src/imgs/maligno.jpeg"
+},
+{
+    "Nombre":"Us",
+    "Director":"Jordan Peele", 
+    "Patrocinador": "Aura Ximena Gómez",
+    "Imagen": "../src/imgs/maligno.jpeg"
+},
+{
+    "Nombre":"Us",
+    "Director":"Jordan Peele", 
+    "Patrocinador": "Aura Ximena Gómez",
+    "Imagen": "../src/imgs/maligno.jpeg"
+}]

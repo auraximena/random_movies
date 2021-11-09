@@ -22,14 +22,15 @@ function App() {
 
   return (
     // éste es el título de la página
-    <Router>
+    //router para dirigir a otras vistas
+    <Router>  
 
       <div className="body">
 
         <div className="title">
           <h1>RANDOM MOVIES</h1>
           <div>
-            <p>¡Deja de discutir con tu pareja por cuál película escoger!</p>
+            <p>¡Deja de discutir por cuál película escoger!</p>
           </div>
           <div className="container mt-5">
             <div className="btn-group">

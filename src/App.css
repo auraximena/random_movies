@@ -2,11 +2,11 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   font-size:medium;
-  color:ivory;
+  color:rgb(5, 5, 4);
 }
-.body {
+/* .body {
   background-color:midnightblue;
-}
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
