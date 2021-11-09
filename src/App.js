@@ -1,10 +1,11 @@
 import './App.css';
-import { Button, Nav, NavItem, NavLink, TabContent, TabPane, Row, Col, CardTitle, CardText, Card } from 'reactstrap'
+import { Nav, NavItem, NavLink } from 'reactstrap'
 import { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css'
-import {BrowserRouter as Router,Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import ObtenerPelicula from './ObtenerPelicula';
-
+import { ListaPeliculas } from './ListaPeliculas';
+import Home from './Home';
 
 function App() {
   // const [nombre, cambiarNombre] = useState("");
@@ -21,27 +22,40 @@ function App() {
 
   return (
     // éste es el título de la página
-    <div className="body">
-      <Router>
-        <Route exact path="/" component={ObtenerPeliculareact }></Route>
-      </Router>
-      <div className="title">
-        <h1>RANDOM MOVIES</h1>
+    <Router>
+
+      <div className="body">
+
+        <div className="title">
+          <h1>RANDOM MOVIES</h1>
+          <div>
+            <p>¡Deja de discutir con tu pareja por cuál película escoger!</p>
+          </div>
+          <div className="container mt-5">
+            <div className="btn-group">
+              <Link to="/" className="btn btn-dark">Home</Link>
+              <Link to="/ObtenerPelicula" className="btn btn-dark">Obtener Película</Link>
+              <Link to="/ListaPeliculas" className="btn btn-dark">Lista de Películas</Link>
+            </div>
+            
+          </div>
+        </div>
+        <hr/>
         <div>
-          <p>¡Deja de discutir con tu pareja por cuál película escoger!</p>
+          <Switch>
+            <Route path="/" exact>
+              <Home />
+            </Route>
+            <Route path="/ObtenerPelicula">
+              <ObtenerPelicula />
+            </Route>
+            <Route path="/ListaPeliculas">
+              <ListaPeliculas />
+            </Route>
+          </Switch>
         </div>
       </div>
-      <div>
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Obtener Película</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Lista de Películas</a>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </Router>
   );
 }
 
