@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import ObtenerPelicula from './ObtenerPelicula';
 import { ListaPeliculas } from './ListaPeliculas';
 import Home from './Home';
+import AgregarPelicula from './AgregarPelicula';
 
 function App() {
   // const [nombre, cambiarNombre] = useState("");
@@ -52,6 +53,9 @@ function App() {
             </Route>
             <Route path="/ListaPeliculas">
               <ListaPeliculas />
+            </Route>
+            <Route path="/ListaPeliculas/AgregarPelicula">
+              <AgregarPelicula/>
             </Route>
           </Switch>
         </div>

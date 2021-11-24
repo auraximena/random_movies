@@ -1,13 +1,18 @@
+import { useEffect } from "react";
 import { Button } from "reactstrap";
 import "../src/peliculas.json" 
 var datospelis=require('../src/peliculas.json')
 console.log(datospelis);
 export function ListaPeliculas() {
-    
+    // const [pelicula,setPelicula] = setState('');
+
+    function agregarPelicula(){
+    }
     return (
+    
         <div className="pelicula">
             <div className="container mt-3">
-                <Button> 
+                <Button onClick={agregarPelicula}> 
                  Agregar Pelicula
                 </Button>
             </div>
